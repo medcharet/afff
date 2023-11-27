@@ -2,21 +2,33 @@ import streamlit as st
 
 # Page configuration
 st.set_page_config(
-    page_title="Amazing Portfolio",
+    page_title="CHARET's Portfolio",
     page_icon="✨",
     layout="wide",
 )
 
 # Header
-st.title("🚀 Mohamed Charet's Amazing Portfolio 🚀")
-st.subheader("Welcome to my world of finance, mathematics, and data!")
-
+st.title("🚀 CHARET Mohamed  🚀")
+# st.subheader("Welcome to my world of finance, mathematics, and data!")
+st.subheader("Elève ingénieur en troisième année Actuariat et Finance")
 # Sidebar with personal information
-st.sidebar.image("CHARET_.png", width=100)
+st.sidebar.markdown(
+    "<style>img {border-radius: 50%;}</style>", unsafe_allow_html=True
+)
+st.sidebar.image("CHARET_.png", width=150)
 st.sidebar.header("Contact")
 st.sidebar.markdown("- Email: m.charet@insea.ac.ma")
 st.sidebar.markdown("- Phone: +212637143327")
 st.sidebar.markdown("- Location: Rabat, Maroc")
+# st.markdown(pdf_link(resume_url, "**Resume **"), unsafe_allow_html=True)
+resume_url = "CV_CHARET_MOHAMED.pdf"
+with open(resume_url, "rb") as file:
+    btn = st.sidebar.download_button(
+        label="Download Resume",
+        data=file,
+        file_name="CV_CHARET_MOHAMED.pdf",
+        mime="application/pdf"
+    )
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-952077223/)")
 
 # Education section
@@ -27,13 +39,23 @@ st.markdown("10/2021 - 08/2024\nRabat, Maroc")
 st.subheader("Licence Mathématique Appliquée | Faculté des sciences Ibn Zohr")
 st.markdown("09/2018 - 06/2021\nAgadir, Maroc")
 
+st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
+st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
 # Experience section
 st.header("🌟 Experience")
-st.subheader("Stage d'application | FRS Consulting")
+st.subheader("Consultant  | FRS Consulting")
 st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
 st.markdown(
     "- Etude des méthodes deterministes et stochastiques pour l’évaluation des provisions techniques.\n"
     "- Création d'une application web Python (avec Streamlit) pour l'évaluation des provisions techniques par la méthode de la CHAIN LADDER."
+)
+st.subheader("Gestionnaire de risque | Actuelia Afrique (Cabinet de Conseil en Actuariat)")
+st.markdown("08/2028 - 09/2023\nCasablanca, Maroc")
+st.markdown(
+    "- Etude des indicateurs de Pilotage."
+    "\n- Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne."
+    "\n- Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future."
+    # "\n- Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest, et le modèle SVM (Support Vector Machine)."
 )
 
 st.subheader("Stage de découverte | HCP")
@@ -90,7 +112,7 @@ st.markdown("- Membre du club INSEA CHARITY")
 st.markdown("- Membre du club ENACTUS INSEA")
 
 # Interests section
-st.header("🌈 Centres d'intérêt")
+st.header("🗺️ Centres d'intérêt")
 st.markdown("- Rédaction de rapports en LaTeX")
 st.markdown("- Actualités et événements mondiaux")
 st.markdown("- Sport")
