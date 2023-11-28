@@ -43,11 +43,11 @@ st.markdown("""
     - Etude des indicateurs de Pilotage.
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
     - Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future.
-    - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
     
-        `Risque de credit` `Risque de marché` `Risque de defaut ` `Machine Learning` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
+        `Risque de credit` `Risque de marché` `Risque de modèle` `Risque de liquidité ` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
         
             """)
+    # - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
 st.subheader("Consultant  | FRS Consulting")
 st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
 # st.subheader("Data Science Intern, [Groundup.ai](https://groundup.ai)")
@@ -107,8 +107,8 @@ st.markdown("10/2021 - 08/2024\nRabat, Maroc")
 st.subheader("Licence Mathématique Appliquée | Faculté des sciences Ibn Zohr")
 st.markdown("09/2018 - 06/2021\nAgadir, Maroc")
 
-st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
-st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
+# st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
+# st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
 # Languages section
 st.header("🌐 Langues")
 st.markdown("- Arabe: Native")
