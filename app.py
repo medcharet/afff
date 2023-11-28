@@ -1,9 +1,10 @@
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 
 # Page configuration
 st.set_page_config(
     page_title="CHARET's Portfolio",
-    page_icon="✨",
+    page_icon="bank",
     layout="wide",
 )
 
@@ -32,32 +33,32 @@ with open(resume_url, "rb") as file:
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-952077223/)")
 
 # Education section
-st.header("📚 Education")
-st.subheader("Ingénieur en Actuariat et Finance quantitative | INSEA")
-st.markdown("10/2021 - 08/2024\nRabat, Maroc")
 
-st.subheader("Licence Mathématique Appliquée | Faculté des sciences Ibn Zohr")
-st.markdown("09/2018 - 06/2021\nAgadir, Maroc")
-
-st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
-st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
 # Experience section
 st.header("🌟 Experience")
-st.subheader("Consultant  | FRS Consulting")
-st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
-st.markdown(
-    "- Etude des méthodes deterministes et stochastiques pour l’évaluation des provisions techniques.\n"
-    "- Création d'une application web Python (avec Streamlit) pour l'évaluation des provisions techniques par la méthode de la CHAIN LADDER."
-)
+
 st.subheader("Gestionnaire de risque | Actuelia Afrique (Cabinet de Conseil en Actuariat)")
 st.markdown("08/2028 - 09/2023\nCasablanca, Maroc")
-st.markdown(
-    "- Etude des indicateurs de Pilotage."
-    "\n- Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne."
-    "\n- Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future."
-    # "\n- Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest, et le modèle SVM (Support Vector Machine)."
-)
-
+st.markdown("""
+    - Etude des indicateurs de Pilotage.
+    - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
+    - Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future.
+    - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
+    
+        `Risque de credit` `Risque de marché` `Risque de defaut ` `Machine Learning` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
+        
+            """)
+st.subheader("Consultant  | FRS Consulting")
+st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
+# st.subheader("Data Science Intern, [Groundup.ai](https://groundup.ai)")
+            # st.write("*July to December 2023 (Expected)*")
+st.markdown("""
+            - Etude des methodes deterministes et stochastiques pour l'evaluation des provisions techniques
+            - Creation d'une application qui permet de calcules les provisins technques en utilisant la methode de chain ladder
+           
+            
+            `Python` `Streamlit` `GLM` `Regression` `EDA` `GITHUB` `DEPLOYEMENT` `Matplotlib`
+            """)
 st.subheader("Stage de découverte | HCP")
 st.markdown("07/2022 - 08/2022\nAgadir, Maroc")
 st.markdown(
@@ -66,7 +67,7 @@ st.markdown(
 )
 
 # Projects section
-st.header("🚀 Projects")
+st.header("🚀 Projects Académiques")
 st.subheader("Finance")
 st.markdown("- Pricing des produits structurés")
 st.markdown("- Modélisation et Analyse des Options Financières : Intégration du Modèle de Black-Scholes et Simulations de Monte Carlo.")
@@ -99,7 +100,15 @@ st.markdown("- Théorie des copules, Analyse Composantes Principales, Inférence
 
 st.subheader("Informatique")
 st.markdown("- LaTeX, C++, R, SAS, EXCEL/VBA, PYTHON.")
+st.header("📚 Education")
+st.subheader("Ingénieur en Actuariat et Finance quantitative | INSEA")
+st.markdown("10/2021 - 08/2024\nRabat, Maroc")
 
+st.subheader("Licence Mathématique Appliquée | Faculté des sciences Ibn Zohr")
+st.markdown("09/2018 - 06/2021\nAgadir, Maroc")
+
+st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
+st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
 # Languages section
 st.header("🌐 Langues")
 st.markdown("- Arabe: Native")
