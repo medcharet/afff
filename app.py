@@ -38,7 +38,7 @@ st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-95207
 st.header("🌟 Experience")
 
 st.subheader("Gestionnaire de risque | Actuelia Afrique (Cabinet de Conseil en Actuariat)")
-st.markdown("08/2028 - 09/2023\nCasablanca, Maroc")
+st.markdown("08/2028 - 10/2023\nCasablanca, Maroc")
 st.markdown("""
     - Etude des indicateurs de Pilotage.
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
