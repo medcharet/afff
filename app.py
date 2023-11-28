@@ -47,7 +47,7 @@ st.markdown("""
         `Risque de credit` `Risque de marché` `Risque de modèle` `Risque de liquidité ` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
         
             """)
-    # - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
+#Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
 st.subheader("Consultant  | FRS Consulting")
 st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
 # st.subheader("Data Science Intern, [Groundup.ai](https://groundup.ai)")
