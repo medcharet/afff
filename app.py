@@ -1,5 +1,5 @@
 import streamlit as st
-#from streamlit_extras.app_logo import add_logo
+from streamlit_extras.app_logo import add_logo
 
 # Page configuration
 st.set_page_config(
@@ -25,11 +25,19 @@ st.sidebar.markdown("- Location: Rabat, Maroc")
 resume_url = "CV_CHARET_MOHAMED.pdf"
 with open(resume_url, "rb") as file:
     btn = st.sidebar.download_button(
-        label="Download Resume",
+        label="Download Resume(version français)",
         data=file,
         file_name="CV_CHARET_MOHAMED.pdf",
         mime="application/pdf"
     )
+resume_url1 = "CV_ENGLISH.pdf"
+with open(resume_url1, "rb") as file:
+    btn = st.sidebar.download_button(
+        label="Download Resume(version anglais)",
+        data=file,
+        file_name="CV_ENGLISH.pdf",
+        mime="application/pdf"
+    )    
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-952077223/)")
 
 # Education section
@@ -38,17 +46,16 @@ st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-95207
 st.header("🌟 Experience")
 
 st.subheader("Gestionnaire de risque | Actuelia Afrique (Cabinet de Conseil en Actuariat)")
-st.markdown("01/08/2028 - 01/10/2023\nCasablanca, Maroc")
+st.markdown("08/2028 - 09/2023\nCasablanca, Maroc")
 st.markdown("""
     - Etude des indicateurs de Pilotage.
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
     - Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future.
-       
-        `Risque de credit` `Risque de marché` `Risque de modèle` `Risque de liquidité ` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
-            """)
+    - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
     
+        `Risque de credit` `Risque de marché` `Risque de defaut ` `Machine Learning` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
         
-#Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
+            """)
 st.subheader("Consultant  | FRS Consulting")
 st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
 # st.subheader("Data Science Intern, [Groundup.ai](https://groundup.ai)")
@@ -108,8 +115,8 @@ st.markdown("10/2021 - 08/2024\nRabat, Maroc")
 st.subheader("Licence Mathématique Appliquée | Faculté des sciences Ibn Zohr")
 st.markdown("09/2018 - 06/2021\nAgadir, Maroc")
 
-# st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
-# st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
+st.subheader("Baccalauréat Science Math A - Option Français | Lycée Hassan II")
+st.markdown("09/2017 - 06/2018\nOulad Teima, Maroc")
 # Languages section
 st.header("🌐 Langues")
 st.markdown("- Arabe: Native")
