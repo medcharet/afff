@@ -25,19 +25,11 @@ st.sidebar.markdown("- Location: Rabat, Maroc")
 resume_url = "CV_CHARET_MOHAMED.pdf"
 with open(resume_url, "rb") as file:
     btn = st.sidebar.download_button(
-        label="Download Resume(version français)",
+        label="Download Resume",
         data=file,
         file_name="CV_CHARET_MOHAMED.pdf",
         mime="application/pdf"
     )
-resume_url1 = "CV_ENGLISH.pdf"
-with open(resume_url1, "rb") as file:
-    btn = st.sidebar.download_button(
-        label="Download Resume(version anglais)",
-        data=file,
-        file_name="CV_ENGLISH.pdf",
-        mime="application/pdf"
-    )    
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-952077223/)")
 
 # Education section
