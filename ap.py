@@ -30,12 +30,12 @@ with open(resume_url, "rb") as file:
         file_name="CV_CHARET_MOHAMED.pdf",
         mime="application/pdf"
     )
-resume_url1 = "CV_ENGLISH.pdf"
-with open(resume_url1, "rb") as file:
+resume_url = "CV_ENGLISH.pdf"
+with open(resume_url, "rb") as file:
     btn = st.sidebar.download_button(
         label="Download Resume(version anglais)",
         data=file,
-        file_name="CV_ENGLISH.pdf",
+        file_name="ENGLISH.pdf",
         mime="application/pdf"
     )    
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-952077223/)")
