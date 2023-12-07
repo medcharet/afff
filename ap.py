@@ -51,8 +51,8 @@ st.markdown("""
     - Etude des indicateurs de Pilotage.
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
     - Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future.
-    - Exploration d'approches alternatives à SdS, notamment l'application de techniques de machine learning telles que XGBoost, Random Forest.
     
+
         `Risque de credit` `Risque de marché` `Risque de defaut ` `Machine Learning` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
         
             """)
