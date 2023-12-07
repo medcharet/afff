@@ -52,7 +52,7 @@ st.markdown("""
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
     - Utilisation de la méthode de Simulation dans le Simulation (SdS) pour anticiper la distribution des fonds propres au future.
     
-        `Risque de credit` `Risque de marché` `Risque de defaut ` `Machine Learning` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
+        `Risque de credit` `Risque de marché` `Risque de defaut ` `Solvabilité` `SBR` `SCR` `MCR` `Ratio de solvabilité`
 
         
             """)
