@@ -22,12 +22,12 @@ st.sidebar.markdown("- Email: m.charet@insea.ac.ma")
 st.sidebar.markdown("- Phone: +212637143327")
 st.sidebar.markdown("- Location: Rabat, Maroc")
 # st.markdown(pdf_link(resume_url, "**Resume **"), unsafe_allow_html=True)
-resume_url = "CV_CHARET_MOHAMED_AF.pdf"
+resume_url = "CV_Mohamed_F.pdf"
 with open(resume_url, "rb") as file:
     btn = st.sidebar.download_button(
         label="Download Resume(version français)",
         data=file,
-        file_name="CV_CHARET_MOHAMED_AF.pdf",
+        file_name="CV_Mohamed_F.pdf",
         mime="application/pdf"
     )
 resume_url = "CV_ENGLISH.pdf"
