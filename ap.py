@@ -46,7 +46,7 @@ st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-charet-95207
 st.header("🌟 Experience")
 
 st.subheader("Gestionnaire de risque | Actuelia Afrique (Cabinet de Conseil en Actuariat)")
-st.markdown("08/2023 - 10/2023\nCasablanca, Maroc")
+st.markdown("08/2023 - 09/2023\nCasablanca, Maroc")
 st.markdown("""
     - Etude des indicateurs de Pilotage.
     - Calcul du Capital de Solvabilité Requis (SCR) en utilisant à la fois la méthode standard et le modèle interne.
@@ -57,7 +57,7 @@ st.markdown("""
         
             """)
 st.subheader("Consultant  | FRS Consulting")
-st.markdown("07/2023 - 09/2023\nCasablanca, Maroc")
+st.markdown("07/2023 - 08/2023\nCasablanca, Maroc")
 # st.subheader("Data Science Intern, [Groundup.ai](https://groundup.ai)")
             # st.write("*July to December 2023 (Expected)*")
 st.markdown("""
