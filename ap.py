@@ -81,8 +81,8 @@ def show_pdf(file_path):
 def pdf_link(pdf_url, link_text="Click here to view PDF"):
     href = f'<a href="{pdf_url}" target="_blank">{link_text}</a>'
     return href
-#img_utown = Image.open("utown.PNG")
-#img_lh = Image.open("lh.PNG")
+img_utown = Image.open("utown.png")
+img_lh = Image.open("lh.png")
 img_ifg = Image.open("ana.jpg")
 #Assets for competitions
 # Assets for education
