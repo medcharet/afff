@@ -81,9 +81,9 @@ def show_pdf(file_path):
 def pdf_link(pdf_url, link_text="Click here to view PDF"):
     href = f'<a href="{pdf_url}" target="_blank">{link_text}</a>'
     return href
-#img_nus = Image.open("insea.png")
+img_nus = Image.open("insea.png")
 img_poc = Image.open("uiz.jpg")
-img_utown = Image.open("utown.PNG")
+#img_utown = Image.open("utown.PNG")
 
 
 st.markdown("*Copyright © 2024 CHARET Mohamed*")
