@@ -104,7 +104,7 @@ img_poc = Image.open("uiz.jpg")
 
 
 img_groundup = Image.open("FRS.jpeg")
-img_hedgedrip = Image.open("Actuelia.png")
+img_hedgedrip = Image.open("actuelia.png")
 # Assets for projects
 # image_names_projects = ["ecom", "chatgpt", "videogames", "health", 
 #                          "biopics", "anime", "word2vec", "cellphone", 
