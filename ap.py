@@ -90,6 +90,8 @@ img_ifg = Image.open("ana.jpg")
 img_nus = Image.open("insea.png")
 img_poc = Image.open("uiz.jpg")
 
+img_groundup = Image.open("FRS.jpeg")
+img_hedgedrip = Image.open("Actuelia.png")
 
 st.markdown("*Copyright © 2024 CHARET Mohamed*")
 
