@@ -82,8 +82,7 @@ def pdf_link(pdf_url, link_text="Click here to view PDF"):
     href = f'<a href="{pdf_url}" target="_blank">{link_text}</a>'
     return href
 img_utown = Image.open("utown.PNG")
-img_lh = Image.open("lh.PNG")
-img_ifg = Image.open("ana.jpg")
+
 
 st.markdown("*Copyright © 2024 CHARET Mohamed*")
 
