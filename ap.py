@@ -17,6 +17,7 @@ import sqlite3
 
 # Set page title
 st.set_page_config(page_title="CHARET Mohamed", page_icon = "desktop_computer", layout = "wide", initial_sidebar_state = "auto")
+
 # Use the following line to include your style.css file
 st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 
@@ -81,8 +82,12 @@ def show_pdf(file_path):
 def pdf_link(pdf_url, link_text="Click here to view PDF"):
     href = f'<a href="{pdf_url}" target="_blank">{link_text}</a>'
     return href
-img_utown = Image.open("utown.png")
-img_lh = Image.open("lh.png")
+
+# Load assets
+#lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
+# Assets for about me
+img_utown = Image.open("utown.PNG")
+img_lh = Image.open("lh.PNG")
 img_ifg = Image.open("ana.jpg")
 #Assets for competitions
 # Assets for education
@@ -90,8 +95,144 @@ img_ifg = Image.open("ana.jpg")
 img_nus = Image.open("insea.png")
 img_poc = Image.open("uiz.jpg")
 
+
+
+# Assets for experiences
+
+
+
+
+
 img_groundup = Image.open("FRS.jpeg")
-img_hedgedrip = Image.open("actuelia.png")
+img_hedgedrip = Image.open("Actuelia.png")
+# Assets for projects
+# image_names_projects = ["ecom", "chatgpt", "videogames", "health", 
+#                          "biopics", "anime", "word2vec", "cellphone", 
+#                          "spotify", "map", "gephi", "fob", "get", "ttdb",
+#                          "blockchain"]
+# images_projects = [Image.open(f"images/{name}.{'jpg' if name not in ('map', 'gephi', 'health') else 'png'}") for name in image_names_projects]
+# Assets for volunteering
+# image_names_vol = ["sdslogo", "sportslogo", "gdsclogo", "csclogo", 
+#                          "nussulogo", "sklogo", "simlogo", "tpjclogo", 
+#                          "sjilogo", "nuspc", "hcs", "fintech"]
+# images_vol = [Image.open(f"images/{name}.{'jpg' if name not in ('map', 'gephi', 'health') else 'png'}") for name in image_names_vol]
+# # Assets for blog
+# img_qb = Image.open("images/qb.jpg")
+# img_mayans = Image.open("images/mayans.jpg")
+# img_outlier = Image.open("images/outlier.png")
+# img_dac = Image.open("images/dac.png")
+# img_raffles = Image.open("images/raffles.jpg")
+# img_covid = Image.open("images/covid.jpg")
+# img_gender = Image.open("images/gender.jpg")
+# img_hci = Image.open("images/hci.jpg")
+# img_wordcloud = Image.open("images/wordcloud.jpg")
+# img_taste = Image.open("images/taste.jpg")
+# img_measles = Image.open("images/measles.jpeg")
+# img_bmsaew = Image.open("images/bmsaew.png")
+# img_dac1 = Image.open("images/dac1.png")
+# img_dac2 = Image.open("images/dac2.png")
+# # Assets for gallery
+# # 2005
+# img_2005_1 = Image.open("gallery/2005_1.jpg")
+# img_2005_2 = Image.open("gallery/2005_2.jpg")
+# # 2006
+# img_2006_1 = Image.open("gallery/2006_1.jpg")
+# # 2008
+# img_2008_1 = Image.open("gallery/2008_1.jpg")
+# # 2009
+# img_2009_1 = Image.open("gallery/2009_1.jpg")
+# # 2011
+# image_dict = {}
+# num_images = 4
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2011_{i}"
+#     image_path = f"gallery/2011_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2012 
+# image_dict = {}
+# num_images = 7
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2012_{i}"
+#     image_path = f"gallery/2012_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2013
+# image_dict = {}
+# num_images = 11
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2013_{i}"
+#     image_path = f"gallery/2013_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2014
+# image_dict = {}
+# num_images = 13
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2014_{i}"
+#     image_path = f"gallery/2014_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2015
+# image_dict = {}
+# num_images = 48
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2015_{i}"
+#     image_path = f"gallery/2015_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2016
+# image_dict = {}
+# num_images = 25
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2016_{i}"
+#     image_path = f"gallery/2016_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2017
+# image_dict = {}
+# num_images = 4
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2017_{i}"
+#     image_path = f"gallery/2017_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2018
+# image_dict = {}
+# num_images = 16
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2018_{i}"
+#     image_path = f"gallery/2018_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# # 2019
+# image_dict = {}
+# num_images = 20
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2019_{i}"
+#     image_path = f"gallery/2019_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# #2020
+# image_dict = {}
+# num_images = 3
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2020_{i}"
+#     image_path = f"gallery/2020_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# #2021
+# image_dict = {}
+# num_images = 14
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2021_{i}"
+#     image_path = f"gallery/2021_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# #2022
+# image_dict = {}
+# num_images = 19
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2022_{i}"
+#     image_path = f"gallery/2022_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# #2023
+# image_dict = {}
+# num_images = 22
+# for i in range(1, num_images + 1):
+#     image_key = f"img_2023_{i}"
+#     image_path = f"gallery/2023_{i}.jpg"
+#     image_dict[image_key] = Image.open(image_path)
+# #img_lottie_animation = Image.open("images/lottie_animation.gif")
 # # Assets for contact
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_abqysclq.json")
 
@@ -668,7 +809,7 @@ elif choose == "Contact":
                 icons_html += icon_template.format(url=url, icon_src=icon_src, alt_text=name.capitalize(), width=width, height=height)
 
         return icons_html
-with st.container():
+    with st.container():
         text_column, mid, image_column = st.columns((1,0.2,0.5))
         with text_column:
             st.write("Let's connect! You may either reach out to me at mohamedcharet6@gmail.com or use the form below!")
